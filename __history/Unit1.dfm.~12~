@@ -62,7 +62,7 @@ object Form1: TForm1
       ImageIndex = 1
       object Label1: TLabel
         Left = 80
-        Top = 112
+        Top = 72
         Width = 8
         Height = 13
         Caption = 'id'
@@ -70,15 +70,15 @@ object Form1: TForm1
       end
       object Label2: TLabel
         Left = 80
-        Top = 155
+        Top = 120
         Width = 26
         Height = 13
         Caption = 'nome'
         FocusControl = DBEdit2
       end
       object Label3: TLabel
-        Left = 232
-        Top = 112
+        Left = 80
+        Top = 224
         Width = 76
         Height = 13
         Caption = 'datanascimento'
@@ -86,11 +86,19 @@ object Form1: TForm1
       end
       object Label4: TLabel
         Left = 80
-        Top = 201
+        Top = 168
         Width = 24
         Height = 13
         Caption = 'email'
         FocusControl = DBEdit4
+      end
+      object Label5: TLabel
+        Left = 328
+        Top = 221
+        Width = 29
+        Height = 13
+        Caption = 'senha'
+        FocusControl = DBEdit5
       end
       object Label6: TLabel
         Left = 592
@@ -102,7 +110,7 @@ object Form1: TForm1
       end
       object DBEdit1: TDBEdit
         Left = 80
-        Top = 128
+        Top = 88
         Width = 134
         Height = 21
         DataField = 'id'
@@ -111,7 +119,7 @@ object Form1: TForm1
       end
       object DBEdit2: TDBEdit
         Left = 80
-        Top = 174
+        Top = 136
         Width = 473
         Height = 21
         DataField = 'nome'
@@ -119,8 +127,8 @@ object Form1: TForm1
         TabOrder = 1
       end
       object DBEdit3: TDBEdit
-        Left = 232
-        Top = 128
+        Left = 80
+        Top = 240
         Width = 223
         Height = 21
         DataField = 'datanascimento'
@@ -130,12 +138,22 @@ object Form1: TForm1
       end
       object DBEdit4: TDBEdit
         Left = 80
-        Top = 220
+        Top = 187
         Width = 473
         Height = 21
         DataField = 'email'
         DataSource = DataSource1
         TabOrder = 3
+      end
+      object DBEdit5: TDBEdit
+        Left = 328
+        Top = 240
+        Width = 225
+        Height = 21
+        DataField = 'senha'
+        DataSource = DataSource1
+        PasswordChar = '*'
+        TabOrder = 4
       end
       object DBImage1: TDBImage
         Left = 592
@@ -145,7 +163,7 @@ object Form1: TForm1
         DataField = 'foto'
         DataSource = DataSource1
         Proportional = True
-        TabOrder = 4
+        TabOrder = 5
       end
       object Button1: TButton
         Left = 592
@@ -153,17 +171,8 @@ object Form1: TForm1
         Width = 105
         Height = 25
         Caption = 'Foto'
-        TabOrder = 5
-        OnClick = Button1Click
-      end
-      object Button2: TButton
-        Left = 368
-        Top = 256
-        Width = 185
-        Height = 25
-        Caption = 'Alterar senha...'
         TabOrder = 6
-        OnClick = Button2Click
+        OnClick = Button1Click
       end
     end
   end

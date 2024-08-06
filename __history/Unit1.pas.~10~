@@ -46,7 +46,7 @@ implementation
 
 {$R *.dfm}
 
-uses Unit2, Unit3, System.hash;
+uses Unit2;
 
 procedure TForm1.Button1Click(Sender: TObject);
 begin
@@ -61,17 +61,10 @@ begin
 end;
 
 procedure TForm1.Button2Click(Sender: TObject);
-var
-  novasenha: string;
 begin
   if Form3.ShowModal = mrOK then
   begin
-    novasenha := THashSHA2.GetHashString(Form3.edSenha.Text);
-    if not(DataModule2.FDQuery1.State in dsEditModes) then
-    begin
-      DataModule2.FDQuery1.Edit
-    end;
-    DataModule2.FDQuery1senha.AsString := novasenha;
+          //
   end;
 end;
 
