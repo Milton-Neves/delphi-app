@@ -44,7 +44,7 @@ implementation
 
 procedure TForm1.Button1Click(Sender: TObject);
 var
-  nomeColuna, operador: string;
+nomeColuna, operador: string
 begin
   nomeColuna := cbColuna.Items[cbColuna.ItemIndex];
   operador := cbOperador.Items[cbOperador.ItemIndex];
@@ -74,6 +74,5 @@ begin
     end;
   end;
   FDQuery1.Open;
-end;
 
 end.

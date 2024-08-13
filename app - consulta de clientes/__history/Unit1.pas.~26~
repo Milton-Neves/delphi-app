@@ -74,6 +74,5 @@ begin
     end;
   end;
   FDQuery1.Open;
-end;
 
 end.
